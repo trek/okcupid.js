@@ -1,0 +1,21 @@
+{
+  "name": "okcupid.js",
+  "version": "0.0.0",
+  "description": "A client library for interacting with OKCupid",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "async": "~0.2.9",
+    "request": "~2.26.0",
+    "jsdom": "~0.8.3",
+    "cheerio": "~0.12.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "replay": "~1.7.0"
+  }
+}

@@ -1,0 +1,13 @@
+POST /login
+host: www.okcupid.com
+content-type: application/x-www-form-urlencoded; charset=utf-8
+
+302 HTTP/1.1
+date: Sun, 11 Aug 2013 21:10:10 GMT
+connection: close
+server: OKWS/3.1.15.9
+location: http://www.okcupid.com/home
+p3p: CP="NOI CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT", policyref="http://www.okcupid.com/w3c/p3p.xml"
+set-cookie: session=1184978518586403577%3a15989446028362376206; Expires=Mon, 11 Aug 2014 21:10:10 GMT; Path=/; Domain=okcupid.com; HttpOnly
+set-cookie: guest=; Expires=Sat, 10 Aug 2013 21:10:10 GMT; Path=/; Domain=okcupid.com; HttpOnly
+
