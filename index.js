@@ -8,6 +8,7 @@
 var request = require('request');
 var cheerio = require('cheerio');
 var util = require('util');
+var Search = require('lib/search');
 
 OKCupid = function(username, password){
   this.username = username;
@@ -15,15 +16,6 @@ OKCupid = function(username, password){
   this.connected = false;
 }
 
-Search = function(options, cbk){
-  this.options  = options;
-  this.cbk = cbk;
-}
-Search.prototype = {
-  next: function(){
-
-  }
-};
 
 OKCupid.prototype = {
   connect: function(cbk){
@@ -108,6 +100,7 @@ OKCupid.prototype = {
       cbk(JSON.parse(body).results[0].locid);
     });
   },
+
   search: function(options, cbk){
     return new Search(options, cbk);
   }
